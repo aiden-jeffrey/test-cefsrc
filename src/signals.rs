@@ -18,7 +18,7 @@ impl PipelineWrapper {
         let pipeline = gst::parse_launch(
             &format!(
                 "cefsrc url=http://localhost:9000/ready_test.html
-                 listen-for-js-signals=true sandbox=false do-timestamp=1 log-severity=1
+                 listen-for-js-signals=true sandbox=false do-timestamp=1
                  chrome-extra-flags='no-sandbox disable-component-update' !
                  video/x-raw,width=1280,height=720 ! videoconvert !
                  x264enc threads=0 bitrate=5000 tune=zerolatency key-int-max=30 !
