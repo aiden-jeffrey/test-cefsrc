@@ -1,0 +1,13 @@
+[package]
+name = "test-cef"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+color-eyre = "0.6.3"
+glib = "0.18.3"
+gst = { package = "gstreamer", version = "0.21.2" }
+gst-video = { package = "gstreamer-video", version = "0.21.2" }
+tokio = {version = "1.40.0", features = ["macros", "rt-multi-thread"]}
