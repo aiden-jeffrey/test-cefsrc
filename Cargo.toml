@@ -10,4 +10,12 @@ color-eyre = "0.6.3"
 glib = "0.18.3"
 gst = { package = "gstreamer", version = "0.21.2" }
 gst-video = { package = "gstreamer-video", version = "0.21.2" }
-tokio = {version = "1.40.0", features = ["macros", "rt-multi-thread"]}
+tokio = {version = "1.40.0", features = ["macros", "rt-multi-thread", "time"]}
+
+[[bin]]
+name = "signals"
+path = "src/signals.rs"
+
+[[bin]]
+name = "sleep"
+path = "src/sleep.rs"
